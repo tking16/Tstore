@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'shop/style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Noto+Sans|Corben|Pontano+Sans" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Welcome to Tstores, your #1 place for tShirts</title>
+	
+</head>
+<body>
+<nav>
+	<div class="navHeader">
+		<a href="{% url 'shop:index' %}">Tstore</a>
+	</div>
+	<div class="navItems">
+		<ul class="navBarMain">
+			<li><a href="#">Men</a></li>
+			<li><a href="#">Women</a></li>
+			<li><a href="#">Kids</a></li>
+			
+			<form action="#" class="navbarForm" role="search" method="get">
+				<input type="text" class="formInput" name="" value="">
+				<button type="submit" class="searchBtn">Search</button>
+			</form>
+		</ul>
+
+	</div>
+</nav>
+	{% block body %}
+	{% endblock %}
+</body>
+</html>

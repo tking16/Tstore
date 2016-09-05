@@ -1,0 +1,10 @@
+{% extends 'shop/base.html' %}
+
+{% block body %}
+	<h2 class="shirtName">{{ shirt }}</h2>
+
+	<br>
+	<img src="{{ shirt.image}}" alt="">
+	<br>
+	<h2>£{{ shirt.price }}</h2>
+{% endblock %}
