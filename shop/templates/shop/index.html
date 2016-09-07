@@ -2,15 +2,19 @@
 
 {% block body %}
 	<h1>Browse our shirts</h1>
+	{% if all_shirts %}
 	<ul>
 	{% for shirt in all_shirts %}
 	<a href="{% url 'shop:detail' shirt.id %}">
 		<div class="shirtIcon">
-			<img class="iconImg" src="{{ shirt.image }}" alt="">
+			<img class="iconImg" src="{{ shirt.image.url }}" alt="">
 			<li class="shirtTitle"><a style="text-decoration:none" href="{% url 'shop:detail' shirt.id %}">{{ shirt.name }}</a></li>
 			<p class="shirtPrice">£{{ shirt.price }}</p>
 		</div>
 	</a>
 	{% endfor %}
 	</ul>
+	{% else %}
+	<h1>No Shirts Available</h1>
+	{% endif %}
 {% endblock %}

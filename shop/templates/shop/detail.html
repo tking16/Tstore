@@ -1,10 +1,20 @@
 {% extends 'shop/base.html' %}
 
 {% block body %}
-	<h2 class="shirtName">{{ shirt }}</h2>
+<div id="container">
+	<div class="detailLeft">
+		<h2 class="shirtName">{{ shirt.name }}</h2>
+		<br>
+		<img class="detailImg" src="{{ shirt.image.url }}" alt="">
+	</div>
+	
+	<div class="detailRight">
+		<h2>£{{ shirt.price }}</h2>
 
-	<br>
-	<img src="{{ shirt.image}}" alt="">
-	<br>
-	<h2>£{{ shirt.price }}</h2>
+		<span>{{ shirt.desc }}</span>
+		<br>
+		<button class="basketBtn" type="submit">Add to basket</button>
+	</div>
+	
+</div>
 {% endblock %}

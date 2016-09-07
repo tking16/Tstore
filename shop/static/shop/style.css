@@ -6,8 +6,8 @@
 	background-color: #333;
 }
 
-.shirtName{
-	font-family: 'Corben', cursive;
+body {
+	background-color: #F6F6F6;
 }
 
 .navItems li{
@@ -45,6 +45,7 @@
 	margin-right: 30px;
 }
 
+/****** Index Styles ******/
 .shirtIcon {
 	display: inline-block;
 	padding: 10px;
@@ -67,3 +68,31 @@
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: bold;
 }
+
+/******Detail Styles *******/
+
+.shirtName{
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+}
+
+.detailImg{
+	width: 500px;
+	height: auto;
+}
+
+.detailLeft {
+	display: inline-block;
+	margin-left: 100px;
+}
+
+.detailRight{
+	float: right;
+	padding: 50px;
+	width: 500px;
+	background-color: #d9d9d9;
+	margin-right: 250px;
+	margin-top: 150px;
+	
+}
+
